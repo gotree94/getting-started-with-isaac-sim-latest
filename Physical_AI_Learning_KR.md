@@ -132,14 +132,13 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/index.html)
 
-![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/_images/hands-exchanging-sphere.gif)
-
-
 <br>
 
 ---
 
 <br>
+
+![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/_images/hands-exchanging-sphere.gif)
 
 **Isaac Lab 시작하기**
 
@@ -151,14 +150,13 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/index.html)
 
-![Isaac ROS](_images/IsaacROS.png)
-
-
 <br>
 
 ---
 
 <br>
+
+![Isaac ROS](_images/IsaacROS.png)
 
 **Isaac ROS 시작하기**
 
@@ -169,6 +167,12 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 **주요 기술:** ROS 2, NITROS 가속, 프로덕션 로보틱스
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-ros/latest/index.html)
+
+<br>
+
+---
+
+<br>
 
 ![](https://docs.nvidia.com/learning/physical-ai/going-further-with-robotics/latest/_images/isim_5.0_full_tut_gui_rl_ros_controller_5.gif)
 
@@ -182,14 +186,13 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/going-further-with-robotics/latest/index.html)
 
-![Isaac Healthcare](_images/Healthcare1.gif)
-
-
 <br>
 
 ---
 
 <br>
+
+![Isaac Healthcare](_images/Healthcare1.gif)
 
 **헬스케어용 Isaac 시작하기**
 
@@ -201,14 +204,13 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-for-healthcare/latest/index.html)
 
-![](https://docs.nvidia.com/learn-openusd/latest/_static/learn-openusd-bbm-t@2x.jpg)
-
-
 <br>
 
 ---
 
 <br>
+
+![](https://docs.nvidia.com/learn-openusd/latest/_static/learn-openusd-bbm-t@2x.jpg)
 
 **OpenUSD 배우기**
 
@@ -220,16 +222,15 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 [학습 시작하기](https://docs.nvidia.com/learn-openusd/latest/index.html)
 
-## 이벤트[#](#events "Link to this heading")
-
-![A stylized workspace where developers design AI systems on holographic displays, alongside a digital twin of a car and rows of data center hardware](_images/gtc-berlin-cover.png)
-
-
 <br>
 
 ---
 
 <br>
+
+## 이벤트[#](#events "Link to this heading")
+
+![A stylized workspace where developers design AI systems on holographic displays, alongside a digital twin of a car and rows of data center hardware](_images/gtc-berlin-cover.png)
 
 **NVIDIA GTC Berlin 2026**
 
