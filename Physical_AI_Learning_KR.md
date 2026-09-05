@@ -25,9 +25,9 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 * 이 코스는 Unitree G1 휴머노이드 로봇을 위한 검증되고 개방적이며
 * 재현 가능한 시뮬레이션 우선 배포 워크플로우인 GR00T 레퍼런스 워크플로우를 소개합니다.
 
-**난이도:** 중급  
-**소요 시간:** 4-12시간  
-**주요 기술:** NVIDIA Isaac GR00T, Isaac Lab-Arena, Isaac Teleop, Isaac ROS, Jetson Thor, Unitree G1
+   * **난이도:** 중급  
+   * **소요 시간:** 4-12시간  
+   * **주요 기술:** NVIDIA Isaac GR00T, Isaac Lab-Arena, Isaac Teleop, Isaac ROS, Jetson Thor, Unitree G1
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/gr00t-e2e-workflow/latest/index.html)
 
