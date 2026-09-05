@@ -21,8 +21,10 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 <br>
 
 ---
-## NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포
----
+
+<br>
+
+### NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포
 
 ![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
 
@@ -40,7 +42,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 <br>
 
-## NVIDIA Isaac을 활용한 SO-101 로봇의 Sim-to-Real 학습
+### NVIDIA Isaac을 활용한 SO-101 로봇의 Sim-to-Real 학습
 
 ![SO-101 vial to rack task](_images/so101_vial_to_rack_task.gif)
 
@@ -58,7 +60,7 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
-## 피지컬 AI 학습: Seeed reBot Arm 및 NVIDIA Isaac을 활용한 Sim-to-Real VLA 파이프라인 (파트너 콘텐츠)
+### 피지컬 AI 학습: Seeed reBot Arm 및 NVIDIA Isaac을 활용한 Sim-to-Real VLA 파이프라인 (파트너 콘텐츠)
 
 ![Seeed reBot arm running a sim-to-real VLA pipeline](_images/seeed_rebot_arm.gif)
 
@@ -76,7 +78,7 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
-## Omniverse 및 OpenUSD를 활용한 디지털 트윈 조립
+### Omniverse 및 OpenUSD를 활용한 디지털 트윈 조립
 
 ![](https://docs.nvidia.com/learning/physical-ai/assembling-digital-twins/latest/_images/image65.png)
 
@@ -94,7 +96,7 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
-## 피지컬 AI 에이전트 부트캠프
+### 피지컬 AI 에이전트 부트캠프
 
 ![An RTX viewport app rendering an OpenUSD attic scene](_images/physical_ai_agent_bootcamp.gif)
 
@@ -112,7 +114,7 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
-## Isaac Sim 시작하기
+### Isaac Sim 시작하기
 
 ![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/_images/isaac-sim-sil-hil.png)
 
@@ -130,7 +132,7 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 <br>
 
-## Isaac Lab 시작하기
+### Isaac Lab 시작하기
 
 ![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/_images/hands-exchanging-sphere.gif)
 
@@ -148,7 +150,7 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 <br>
 
-## Isaac ROS 시작하기
+### Isaac ROS 시작하기
 
 ![Isaac ROS](_images/IsaacROS.png)
 
@@ -166,7 +168,7 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 <br>
 
-## 로보틱스 심화 과정
+### 로보틱스 심화 과정
 
 ![](https://docs.nvidia.com/learning/physical-ai/going-further-with-robotics/latest/_images/isim_5.0_full_tut_gui_rl_ros_controller_5.gif)
 
@@ -184,7 +186,7 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 <br>
 
-## 헬스케어용 Isaac 시작하기
+### 헬스케어용 Isaac 시작하기
 
 ![Isaac Healthcare](_images/Healthcare1.gif)
 
@@ -202,7 +204,7 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 <br>
 
-## OpenUSD 배우기
+### OpenUSD 배우기
 
 ![](https://docs.nvidia.com/learn-openusd/latest/_static/learn-openusd-bbm-t@2x.jpg)
 
@@ -220,7 +222,7 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 <br>
 
-## 이벤트[#](#events "Link to this heading")
+### 이벤트[#](#events "Link to this heading")
 
 ![A stylized workspace where developers design AI systems on holographic displays, alongside a digital twin of a car and rows of data center hardware](_images/gtc-berlin-cover.png)
 
