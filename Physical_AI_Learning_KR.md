@@ -165,7 +165,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### 로보틱스 심화 과정
 
-![](https://docs.nvidia.com/learning/physical-ai/going-further-with-robotics/latest/_images/isim_5.0_full_tut_gui_rl_ros_controller_5.gif)
+![](_images/isim_5.0_full_tut_gui_rl_ros_controller_5.gif)
 
 * OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 로봇 자산을 최적화하며,
 * 복잡한 다중 로봇 시스템으로 확장되는 엔터프라이즈급 디지털 트윈을 구축합니다.
