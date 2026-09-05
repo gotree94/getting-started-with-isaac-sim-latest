@@ -24,9 +24,9 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 <br>
 
-![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
+## NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포
 
-**NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포**
+![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
 
 이 코스는 Unitree G1 휴머노이드 로봇을 위한 검증되고 개방적이며 재현 가능한 시뮬레이션 우선 배포 워크플로우인 GR00T 레퍼런스 워크플로우를 소개합니다.
 
@@ -42,10 +42,9 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 <br>
 
+## NVIDIA Isaac을 활용한 SO-101 로봇의 Sim-to-Real 학습
 
 ![SO-101 vial to rack task](_images/so101_vial_to_rack_task.gif)
-
-**NVIDIA Isaac을 활용한 SO-101 로봇의 Sim-to-Real 학습**
 
 SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 활용하여 완전한 sim-to-real 워크플로우를 탐구합니다. 로봇을 설정 및 교정한 다음, 원심분리기 바이알 Pick-and-Place 작업을 위한 GR00T 정책을 사후 학습시키기 위한 시연을 수행합니다. Isaac Lab으로 평가하고 실제 하드웨어에 배포하며, sim-to-real 격차를 줄이는 데 도움이 되는 4가지 전략을 적용합니다.
 
@@ -61,11 +60,9 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
+## 피지컬 AI 학습: Seeed reBot Arm 및 NVIDIA Isaac을 활용한 Sim-to-Real VLA 파이프라인 (파트너 콘텐츠)
+
 ![Seeed reBot arm running a sim-to-real VLA pipeline](_images/seeed_rebot_arm.gif)
-
-파트너 콘텐츠
-
-**피지컬 AI 학습: Seeed reBot Arm 및 NVIDIA Isaac을 활용한 Sim-to-Real VLA 파이프라인**
 
 피지컬 AI를 위한 엔드투엔드 실습 커리큘럼으로, Hugging Face LeRobot을 이용한 reBot 로봇 암 원격 제어, NVIDIA Isaac Sim 디지털 트윈 에뮬레이션, Cosmos Transfer 장면 증강, Isaac GR00T VLA 미세 조정, 실시간 NVIDIA Jetson 엣지 배포에 이르기까지 개발자를 안내합니다.
 
@@ -81,10 +78,9 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
+## Omniverse 및 OpenUSD를 활용한 디지털 트윈 조립
 
 ![](https://docs.nvidia.com/learning/physical-ai/assembling-digital-twins/latest/_images/image65.png)
-
-**Omniverse 및 OpenUSD를 활용한 디지털 트윈 조립**
 
 공장 및 창고를 위한 NVIDIA Omniverse 및 OpenUSD 표준을 사용하여 복잡한 산업 씬을 조립하는 방법을 배웁니다. 씬 구성, 자산 조직화 및 협업 워크플로우를 적용합니다.
 
@@ -100,10 +96,9 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
+## 피지컬 AI 에이전트 부트캠프
 
 ![An RTX viewport app rendering an OpenUSD attic scene](_images/physical_ai_agent_bootcamp.gif)
-
-**피지컬 AI 에이전트 부트캠프**
 
 실용적인 피지컬 AI 워크플로우를 한 단계씩 구축합니다. Patterned Prompt Method를 사용하여 실제 NVIDIA SDK 및 Omniverse 라이브러리에 대해 AI 코딩 에이전트를 지시하여 OpenUSD 씬을 렌더링하고, SimReady 자산을 검증하며, 실시간 물리 시뮬레이션을 실행합니다.
 
@@ -119,9 +114,9 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
-![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/_images/isaac-sim-sil-hil.png)
+## Isaac Sim 시작하기
 
-**Isaac Sim 시작하기**
+![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/_images/isaac-sim-sil-hil.png)
 
 NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조립하고, 물리 특성을 설정하며, 센서를 추가하고 첫 번째 시뮬레이션을 실행합니다.
 
@@ -137,9 +132,9 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 <br>
 
-![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/_images/hands-exchanging-sphere.gif)
+## Isaac Lab 시작하기
 
-**Isaac Lab 시작하기**
+![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/_images/hands-exchanging-sphere.gif)
 
 강화 학습 및 GPU 가속 학습을 집중적으로 배웁니다. NVIDIA Isaac Lab이 수천 대의 로봇을 병렬로 학습시켜 수일이 걸리던 수렴을 단 몇 시간 만에 달성하는 방법을 이해합니다.
 
@@ -155,9 +150,9 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 <br>
 
-![Isaac ROS](_images/IsaacROS.png)
+## Isaac ROS 시작하기
 
-**Isaac ROS 시작하기**
+![Isaac ROS](_images/IsaacROS.png)
 
 프로덕션 급 인지 및 내비게이션 시스템을 위한 NVIDIA Isaac ROS GEM 및 NITROS를 사용하여 ROS 2 개발을 가속화합니다. 실시간 제약 조건 하에서 실제 하드웨어에 AI 정책을 배포합니다.
 
@@ -173,9 +168,9 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 <br>
 
-![](https://docs.nvidia.com/learning/physical-ai/going-further-with-robotics/latest/_images/isim_5.0_full_tut_gui_rl_ros_controller_5.gif)
+## 로보틱스 심화 과정
 
-**로보틱스 심화 과정**
+![](https://docs.nvidia.com/learning/physical-ai/going-further-with-robotics/latest/_images/isim_5.0_full_tut_gui_rl_ros_controller_5.gif)
 
 OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 로봇 자산을 최적화하며, 복잡한 다중 로봇 시스템으로 확장되는 엔터프라이즈급 디지털 트윈을 구축합니다.
 
@@ -191,9 +186,9 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 <br>
 
-![Isaac Healthcare](_images/Healthcare1.gif)
+## 헬스케어용 Isaac 시작하기
 
-**헬스케어용 Isaac 시작하기**
+![Isaac Healthcare](_images/Healthcare1.gif)
 
 헬스케어 환경에서의 로보틱스 응용 분야를 탐색합니다. 안전 필수 시스템 설계, 규제 고려 사항, 헬스케어 특화 센서 통합 접근법을 배웁니다.
 
@@ -209,9 +204,9 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 <br>
 
-![](https://docs.nvidia.com/learn-openusd/latest/_static/learn-openusd-bbm-t@2x.jpg)
+## OpenUSD 배우기
 
-**OpenUSD 배우기**
+![](https://docs.nvidia.com/learn-openusd/latest/_static/learn-openusd-bbm-t@2x.jpg)
 
 복잡한 3D 워크플로우를 위한 Universal Scene Description(USD)을 탐구합니다. 이 무료 커리큘럼은 자산 구조, 구성 아크(composition arcs), 파이프라인 개발을 다루며 [OpenUSD 자격증](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/) 취득을 준비할 수 있도록 지원합니다.
 
