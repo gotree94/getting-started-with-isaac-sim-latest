@@ -113,16 +113,15 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/physical-ai-agent-bootcamp/latest/index.html)
 
-![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/_images/isaac-sim-sil-hil.png)
-
-**Isaac Sim 시작하기**
-
 <br>
 
 ---
 
 <br>
 
+![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/_images/isaac-sim-sil-hil.png)
+
+**Isaac Sim 시작하기**
 
 NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조립하고, 물리 특성을 설정하며, 센서를 추가하고 첫 번째 시뮬레이션을 실행합니다.
 
