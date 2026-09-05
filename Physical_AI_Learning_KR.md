@@ -18,14 +18,13 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ## 코스 목록[#](#courses "Link to this heading")
 
-![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
-
 <br>
 
 ---
 
 <br>
 
+![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
 
 **NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포**
 
@@ -37,14 +36,14 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/gr00t-e2e-workflow/latest/index.html)
 
-![SO-101 vial to rack task](_images/so101_vial_to_rack_task.gif)
-
-
 <br>
 
 ---
 
 <br>
+
+
+![SO-101 vial to rack task](_images/so101_vial_to_rack_task.gif)
 
 **NVIDIA Isaac을 활용한 SO-101 로봇의 Sim-to-Real 학습**
 
@@ -58,13 +57,14 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 ![Seeed reBot arm running a sim-to-real VLA pipeline](_images/seeed_rebot_arm.gif)
 
-파트너 콘텐츠
-
 <br>
 
 ---
 
 <br>
+
+
+파트너 콘텐츠
 
 **피지컬 AI 학습: Seeed reBot Arm 및 NVIDIA Isaac을 활용한 Sim-to-Real VLA 파이프라인**
 
@@ -76,14 +76,14 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 [학습 시작하기](https://www.seeedstudio.com/sim-to-real-with-seeed-rebot-and-nvidia-isaac)
 
-![](https://docs.nvidia.com/learning/physical-ai/assembling-digital-twins/latest/_images/image65.png)
-
-
 <br>
 
 ---
 
 <br>
+
+
+![](https://docs.nvidia.com/learning/physical-ai/assembling-digital-twins/latest/_images/image65.png)
 
 **Omniverse 및 OpenUSD를 활용한 디지털 트윈 조립**
 
@@ -95,14 +95,14 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/assembling-digital-twins/latest/index.html)
 
-![An RTX viewport app rendering an OpenUSD attic scene](_images/physical_ai_agent_bootcamp.gif)
-
-
 <br>
 
 ---
 
 <br>
+
+
+![An RTX viewport app rendering an OpenUSD attic scene](_images/physical_ai_agent_bootcamp.gif)
 
 **피지컬 AI 에이전트 부트캠프**
 
@@ -116,6 +116,7 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 ![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/_images/isaac-sim-sil-hil.png)
 
+**Isaac Sim 시작하기**
 
 <br>
 
@@ -123,7 +124,6 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 <br>
 
-**Isaac Sim 시작하기**
 
 NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조립하고, 물리 특성을 설정하며, 센서를 추가하고 첫 번째 시뮬레이션을 실행합니다.
 
