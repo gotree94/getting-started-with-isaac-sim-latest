@@ -1,5 +1,7 @@
 # 피지컬 AI 학습[#](#physical-ai-learning "Link to this heading")
 
+https://docs.nvidia.com/learning/physical-ai/#
+
 NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 및 AI 기반 시스템 구축을 시작하세요.
 
 아래에서 코스를 선택하여 피지컬 AI 여정을 시작하세요.
