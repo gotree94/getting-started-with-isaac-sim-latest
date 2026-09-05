@@ -21,10 +21,8 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 <br>
 
 ---
-
-<br>
-
 ## NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포
+---
 
 ![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
 
