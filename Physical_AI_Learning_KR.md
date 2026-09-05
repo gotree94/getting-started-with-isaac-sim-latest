@@ -165,7 +165,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### 로보틱스 심화 과정
 
-![](_images/isim_5.0_full_tut_gui_rl_ros_controller_5.gif)
+<img src="_images/isim_5.0_full_tut_gui_rl_ros_controller_5.gif" width="100%">
 
 * OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 로봇 자산을 최적화하며,
 * 복잡한 다중 로봇 시스템으로 확장되는 엔터프라이즈급 디지털 트윈을 구축합니다.
@@ -183,7 +183,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### 헬스케어용 Isaac 시작하기
 
-![Isaac Healthcare](_images/Healthcare1.gif)
+<img src="_images/Healthcare1.gif" width="100%">
 
 * 헬스케어 환경에서의 로보틱스 응용 분야를 탐색합니다. 안전 필수 시스템 설계, 규제 고려 사항, 헬스케어 특화 센서 통합 접근법을 배웁니다.
 
