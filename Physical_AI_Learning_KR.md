@@ -94,7 +94,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### 피지컬 AI 에이전트 부트캠프
 
-![An RTX viewport app rendering an OpenUSD attic scene](_images/physical_ai_agent_bootcamp.gif)
+<img src="_images/physical_ai_agent_bootcamp.gif" width="100%">
 
 * 실용적인 피지컬 AI 워크플로우를 한 단계씩 구축합니다. Patterned Prompt Method를 사용하여
 * 실제 NVIDIA SDK 및 Omniverse 라이브러리에 대해 AI 코딩 에이전트를 지시하여 OpenUSD 씬을 렌더링하고,
