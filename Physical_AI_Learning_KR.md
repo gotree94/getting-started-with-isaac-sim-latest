@@ -12,12 +12,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 [NVIDIA의 피지컬 AI 개요 읽기](https://www.nvidia.com/en-us/glossary/generative-physical-ai/)
 
-코스 탐색기
-
-## 다음 코스 찾기
-
-## 코스 목록[#](#courses "Link to this heading")
-
 <br>
 
 ---
