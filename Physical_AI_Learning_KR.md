@@ -57,7 +57,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### 피지컬 AI 학습: Seeed reBot Arm 및 NVIDIA Isaac을 활용한 Sim-to-Real VLA 파이프라인 (파트너 콘텐츠)
 
-![Seeed reBot arm running a sim-to-real VLA pipeline](_images/seeed_rebot_arm.gif)
+<img src="_images/seeed_rebot_arm.gif" width="100%">
 
 * 피지컬 AI를 위한 엔드투엔드 실습 커리큘럼으로, Hugging Face LeRobot을 이용한 reBot 로봇 암 원격 제어,
 * NVIDIA Isaac Sim 디지털 트윈 에뮬레이션, Cosmos Transfer 장면 증강, Isaac GR00T VLA 미세 조정,
