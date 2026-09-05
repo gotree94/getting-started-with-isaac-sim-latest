@@ -22,6 +22,8 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
 
+<img src="_images/apple_to_plate.gif" width="200%">
+
 * 이 코스는 Unitree G1 휴머노이드 로봇을 위한 검증되고 개방적이며
 * 재현 가능한 시뮬레이션 우선 배포 워크플로우인 GR00T 레퍼런스 워크플로우를 소개합니다.
 
