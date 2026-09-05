@@ -147,7 +147,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### Isaac ROS 시작하기
 
-![Isaac ROS](_images/IsaacROS.png)
+<img src="_images/IsaacROS.png" width="100%">
 
 * 프로덕션 급 인지 및 내비게이션 시스템을 위한 NVIDIA Isaac ROS GEM 및 NITROS를 사용하여 ROS 2 개발을 가속화합니다.
 * 실시간 제약 조건 하에서 실제 하드웨어에 AI 정책을 배포합니다.
