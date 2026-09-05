@@ -1,0 +1,15 @@
+# Physical AI Learning
+
+> Free, self-paced NVIDIA courses on physical AI: OpenUSD, Omniverse digital twins, Isaac Sim, Isaac Lab, Isaac ROS, and sim-to-real robotics.
+
+
+2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved
+
+## Pages
+
+- [Physical AI Learning](https://docs.nvidia.com/learning/physical-ai/index.md): Free, self-paced NVIDIA courses for building autonomous robots, digital twins, and physical AI systems, spanning OpenUSD, Omniverse, Isaac Sim, Isaac Lab, Isaac ROS, and sim-to-real robotics.
+- [Robotics](https://docs.nvidia.com/learning/physical-ai/robotics.md): Self-paced courses covering the NVIDIA robotics stack: simulation in Isaac Sim, policy training in Isaac Lab, ROS 2 deployment with Isaac ROS, sim-to-real workflows, enterprise asset pipelines, and healthcare robotics.
+
+---
+
+For more comprehensive documentation, see [llms-full.txt](https://docs.nvidia.com/learning/physical-ai/llms-full.txt)
