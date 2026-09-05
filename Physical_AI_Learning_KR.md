@@ -129,7 +129,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### Isaac Lab 시작하기
 
-![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/_images/hands-exchanging-sphere.gif)
+<img src="_images/hands-exchanging-sphere.gif" width="100%">
 
 * 강화 학습 및 GPU 가속 학습을 집중적으로 배웁니다.
 * NVIDIA Isaac Lab이 수천 대의 로봇을 병렬로 학습시켜 수일이 걸리던 수렴을 단 몇 시간 만에 달성하는 방법을 이해합니다.
