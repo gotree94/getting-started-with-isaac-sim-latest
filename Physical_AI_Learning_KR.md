@@ -20,8 +20,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포
 
-![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
-
 <img src="_images/apple_to_plate.gif" width="100%">
 
 * 이 코스는 Unitree G1 휴머노이드 로봇을 위한 검증되고 개방적이며
@@ -40,7 +38,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ### NVIDIA Isaac을 활용한 SO-101 로봇의 Sim-to-Real 학습
 
-![SO-101 vial to rack task](_images/so101_vial_to_rack_task.gif)
+<img src="_images/so101_vial_to_rack_task.gif" width="100%">
 
 * SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 활용하여 완전한 sim-to-real 워크플로우를 탐구합니다.
 * 로봇을 설정 및 교정한 다음, 원심분리기 바이알 Pick-and-Place 작업을 위한 GR00T 정책을 사후 학습시키기 위한 시연을 수행합니다.
