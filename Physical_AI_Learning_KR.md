@@ -15,9 +15,7 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 [NVIDIA의 피지컬 AI 개요 읽기](https://www.nvidia.com/en-us/glossary/generative-physical-ai/)
 
 <br>
-
 ---
-
 <br>
 
 ### NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포
