@@ -55,14 +55,13 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html)
 
-![Seeed reBot arm running a sim-to-real VLA pipeline](_images/seeed_rebot_arm.gif)
-
 <br>
 
 ---
 
 <br>
 
+![Seeed reBot arm running a sim-to-real VLA pipeline](_images/seeed_rebot_arm.gif)
 
 파트너 콘텐츠
 
