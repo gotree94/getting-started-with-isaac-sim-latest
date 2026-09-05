@@ -18,6 +18,13 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ![Unitree G1 humanoid robot placing an apple on a plate](_images/apple_to_plate.gif)
 
+<br>
+
+---
+
+<br>
+
+
 **NVIDIA Isaac GR00T 및 Unitree G1을 활용한 엔드투엔드 휴머노이드 로봇 개발 및 배포**
 
 이 코스는 Unitree G1 휴머노이드 로봇을 위한 검증되고 개방적이며 재현 가능한 시뮬레이션 우선 배포 워크플로우인 GR00T 레퍼런스 워크플로우를 소개합니다.
@@ -29,6 +36,13 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/gr00t-e2e-workflow/latest/index.html)
 
 ![SO-101 vial to rack task](_images/so101_vial_to_rack_task.gif)
+
+
+<br>
+
+---
+
+<br>
 
 **NVIDIA Isaac을 활용한 SO-101 로봇의 Sim-to-Real 학습**
 
@@ -44,6 +58,12 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 파트너 콘텐츠
 
+<br>
+
+---
+
+<br>
+
 **피지컬 AI 학습: Seeed reBot Arm 및 NVIDIA Isaac을 활용한 Sim-to-Real VLA 파이프라인**
 
 피지컬 AI를 위한 엔드투엔드 실습 커리큘럼으로, Hugging Face LeRobot을 이용한 reBot 로봇 암 원격 제어, NVIDIA Isaac Sim 디지털 트윈 에뮬레이션, Cosmos Transfer 장면 증강, Isaac GR00T VLA 미세 조정, 실시간 NVIDIA Jetson 엣지 배포에 이르기까지 개발자를 안내합니다.
@@ -55,6 +75,13 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 [학습 시작하기](https://www.seeedstudio.com/sim-to-real-with-seeed-rebot-and-nvidia-isaac)
 
 ![](https://docs.nvidia.com/learning/physical-ai/assembling-digital-twins/latest/_images/image65.png)
+
+
+<br>
+
+---
+
+<br>
 
 **Omniverse 및 OpenUSD를 활용한 디지털 트윈 조립**
 
@@ -68,6 +95,13 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 
 ![An RTX viewport app rendering an OpenUSD attic scene](_images/physical_ai_agent_bootcamp.gif)
 
+
+<br>
+
+---
+
+<br>
+
 **피지컬 AI 에이전트 부트캠프**
 
 실용적인 피지컬 AI 워크플로우를 한 단계씩 구축합니다. Patterned Prompt Method를 사용하여 실제 NVIDIA SDK 및 Omniverse 라이브러리에 대해 AI 코딩 에이전트를 지시하여 OpenUSD 씬을 렌더링하고, SimReady 자산을 검증하며, 실시간 물리 시뮬레이션을 실행합니다.
@@ -79,6 +113,13 @@ SO-101 암과 직접 구축할 수 있는 저렴한 물리적 작업 공간을 �
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/physical-ai-agent-bootcamp/latest/index.html)
 
 ![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/_images/isaac-sim-sil-hil.png)
+
+
+<br>
+
+---
+
+<br>
 
 **Isaac Sim 시작하기**
 
@@ -92,6 +133,13 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 
 ![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/_images/hands-exchanging-sphere.gif)
 
+
+<br>
+
+---
+
+<br>
+
 **Isaac Lab 시작하기**
 
 강화 학습 및 GPU 가속 학습을 집중적으로 배웁니다. NVIDIA Isaac Lab이 수천 대의 로봇을 병렬로 학습시켜 수일이 걸리던 수렴을 단 몇 시간 만에 달성하는 방법을 이해합니다.
@@ -103,6 +151,13 @@ NVIDIA Isaac Sim 인터페이스를 탐색합니다. 처음부터 로봇을 조�
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/index.html)
 
 ![Isaac ROS](_images/IsaacROS.png)
+
+
+<br>
+
+---
+
+<br>
 
 **Isaac ROS 시작하기**
 
@@ -128,6 +183,13 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 ![Isaac Healthcare](_images/Healthcare1.gif)
 
+
+<br>
+
+---
+
+<br>
+
 **헬스케어용 Isaac 시작하기**
 
 헬스케어 환경에서의 로보틱스 응용 분야를 탐색합니다. 안전 필수 시스템 설계, 규제 고려 사항, 헬스케어 특화 센서 통합 접근법을 배웁니다.
@@ -139,6 +201,13 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 [학습 시작하기](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-for-healthcare/latest/index.html)
 
 ![](https://docs.nvidia.com/learn-openusd/latest/_static/learn-openusd-bbm-t@2x.jpg)
+
+
+<br>
+
+---
+
+<br>
 
 **OpenUSD 배우기**
 
@@ -154,6 +223,13 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 
 ![A stylized workspace where developers design AI systems on holographic displays, alongside a digital twin of a car and rows of data center hardware](_images/gtc-berlin-cover.png)
 
+
+<br>
+
+---
+
+<br>
+
 **NVIDIA GTC Berlin 2026**
 
 10월 20~22일에 열리는 산업을 형성할 3일간의 AI 이벤트에 참여하여 개발자, 연구원, 스타트업 및 비즈니스 리더가 이상적인 AI 전략을 구축할 수 있도록 지원을 받으세요.
@@ -166,6 +242,13 @@ OpenUSD 상호운용성 기술을 개발합니다. URDF를 USD로 변환하고, 
 ![A quadruped robot exploring a red canyon landscape beside a domed habitat, with the title Operation Foreign Gravity](_images/banner_orb.jpeg)
 
 파트너 콘텐츠
+
+
+<br>
+
+---
+
+<br>
 
 **CoreWeave: Operation Foreign Gravity: Let’s Get Physical With AI — 시뮬레이션에서 로봇에게 새로운 기술 가르치기**
 
