@@ -34,7 +34,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### NVIDIA Isaac을 활용한 SO-101 로봇의 Sim-to-Real 학습
 
@@ -54,7 +53,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### 피지컬 AI 학습: Seeed reBot Arm 및 NVIDIA Isaac을 활용한 Sim-to-Real VLA 파이프라인 (파트너 콘텐츠)
 
@@ -73,7 +71,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### Omniverse 및 OpenUSD를 활용한 디지털 트윈 조립
 
@@ -91,7 +88,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### 피지컬 AI 에이전트 부트캠프
 
@@ -110,8 +106,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
-
 ### Isaac Sim 시작하기
 
 ![](https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-sim/latest/_images/isaac-sim-sil-hil.png)
@@ -128,7 +122,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### Isaac Lab 시작하기
 
@@ -146,7 +139,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### Isaac ROS 시작하기
 
@@ -164,7 +156,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### 로보틱스 심화 과정
 
@@ -182,7 +173,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### 헬스케어용 Isaac 시작하기
 
@@ -200,7 +190,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### OpenUSD 배우기
 
@@ -219,7 +208,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 ### 이벤트[#](#events "Link to this heading")
 
@@ -243,7 +231,6 @@ NVIDIA의 무료 자율 학습 과정을 통해 자율 로봇, 디지털 트윈 
 
 ---
 
-<br>
 
 **CoreWeave: Operation Foreign Gravity: Let’s Get Physical With AI — 시뮬레이션에서 로봇에게 새로운 기술 가르치기**
 
