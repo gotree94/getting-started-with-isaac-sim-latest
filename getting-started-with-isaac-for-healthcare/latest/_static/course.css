@@ -1,0 +1,152 @@
+/* Local custom styles for the course template.
+ *
+ * This file is intentionally minimal. It exists so the default Sphinx build is
+ * self-contained (the original course pulled these assets from a private
+ * extension). Add your own course-specific CSS overrides here.
+ */
+
+/* Example: give figure captions a touch more breathing room. */
+figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  opacity: 1;
+}
+
+html[data-theme="dark"] figure figcaption,
+html[data-theme="dark"] div.figure p.caption {
+  color: #d9dee5;
+  opacity: 1;
+}
+
+/* Landing-page course highlight. The intro stays in HTML so it remains accessible,
+ * searchable, and easy to update independently of the compressed video. */
+.course-highlight {
+  margin: 1rem 0 2rem;
+  overflow: hidden;
+  color: #f5f7f8;
+  background: #111516;
+  border-top: 4px solid #76b900;
+  border-bottom: 1px solid #343b3d;
+}
+
+.course-highlight__intro {
+  max-width: 50rem;
+  padding: 1.5rem 1.75rem 1.35rem;
+}
+
+.course-highlight__intro .course-highlight__eyebrow {
+  margin: 0 0 0.35rem;
+  color: #b6e36c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.course-highlight__intro h2 {
+  margin: 0 0 0.65rem;
+  padding: 0;
+  color: #ffffff;
+  border: 0;
+  font-size: 2rem;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.course-highlight__intro p:last-child {
+  margin: 0;
+  color: #e1e6e7;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.course-highlight__media {
+  margin: 0;
+  padding: 0;
+  background: #080a0b;
+}
+
+.course-highlight__media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 160 / 81;
+  background: #080a0b;
+  object-fit: cover;
+}
+
+.course-highlight__media figcaption {
+  margin: 0;
+  padding: 0.65rem 1rem 0.75rem;
+  color: #d9dee5;
+  background: #111516;
+  font-size: 0.86rem;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .course-highlight__intro {
+    padding: 1.2rem 1rem 1.1rem;
+  }
+
+  .course-highlight__intro h2 {
+    font-size: 1.65rem;
+  }
+
+  .course-highlight__intro p:last-child {
+    font-size: 0.96rem;
+  }
+}
+
+/* --- Prompts: the heart of this course ------------------------------------
+ * This course is driven by natural-language prompts, so every ```text block
+ * is a prompt to paste into your coding agent. Style it as a labelled card so
+ * prompts stand out from prose and from (hidden) shell commands. Non-prompt
+ * monospace blocks use a different language (e.g. ```none) and are unaffected.
+ */
+div.highlight-text {
+  border: 1px solid #b7c990;
+  border-left: 4px solid #5f8f00;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+div.highlight-text::before {
+  content: "\25B6  Prompt to paste into your coding agent";
+  display: block;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #263600;
+  background: #e8f0d5;
+  padding: 0.4em 0.85em;
+}
+div.highlight-text .highlight,
+div.highlight-text pre {
+  background: #f7f9f2 !important;
+  color: #182000 !important;
+  margin: 0;
+}
+div.highlight-text button.copybtn {
+  border-color: #84965d;
+  background: #ffffff;
+  color: #314200;
+}
+
+html[data-theme="dark"] div.highlight-text {
+  border-color: #60753a;
+  border-left-color: #93c83e;
+}
+html[data-theme="dark"] div.highlight-text::before {
+  color: #efffc9;
+  background: #263516;
+}
+html[data-theme="dark"] div.highlight-text .highlight,
+html[data-theme="dark"] div.highlight-text pre {
+  background: #151a10 !important;
+  color: #f1f6e8 !important;
+}
+html[data-theme="dark"] div.highlight-text button.copybtn {
+  border-color: #71864a;
+  background: #28331d;
+  color: #f1f6e8;
+}

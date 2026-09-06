@@ -1,0 +1,174 @@
+/* Concept Slides: NVIDIA-branded slide layout for in-doc "slides".
+   Colors are driven by the pydata theme variables so the slides follow the
+   light/dark toggle. NVIDIA green (#76b900) is the only fixed accent. */
+
+:root {
+  --slide-accent: #76b900;
+}
+
+/* Slide header: bold title with a thin green accent underline. */
+.slide-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--pst-color-text-base);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 3px solid var(--slide-accent);
+}
+
+/* Muted subtitle beneath the title. */
+.slide-subtitle {
+  font-size: 1.05rem;
+  color: var(--pst-color-text-muted);
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+}
+
+/* Icon + text bullet rows. */
+.slide-iconrow {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin-bottom: 0.85rem;
+}
+
+.slide-iconrow:last-child {
+  margin-bottom: 0;
+}
+
+/* Keep the icon fixed-width and aligned with the first line of text. */
+.slide-iconrow svg {
+  flex: 0 0 auto;
+  margin-top: 0.15rem;
+}
+
+/* Octicons render with currentColor, so coloring text colors the glyph. */
+.slide-icon {
+  color: var(--slide-accent);
+}
+
+/* Framed slide image on the visual side of each slide. */
+.slide-image {
+  border-radius: 8px;
+  border: 1px solid var(--pst-color-border);
+  width: 100%;
+  height: auto;
+}
+
+/* Mermaid diagrams on the visual side of a slide: present them on an NVIDIA
+   "stage" card with a green-tinted frame, so green nodes and connectors pop the
+   same way they do on an NVIDIA slide. The card is black in dark mode and a
+   light surface in light mode (see the theme override below). */
+.slide-mermaid {
+  border-radius: 8px;
+  border: 1px solid rgba(118, 185, 0, 0.35);
+  background: #000000;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Light mode: drop the black stage for a light surface. */
+[data-theme="light"] .slide-mermaid {
+  background: var(--pst-color-surface, #f4f4f4);
+}
+
+.slide-mermaid svg {
+  max-width: 100%;
+  /* Cap the height so the stage card hugs the diagram instead of reserving a
+     tall block. Aspect ratio is preserved via the SVG viewBox, so a wide
+     left-to-right diagram simply renders shorter. */
+  height: auto;
+  max-height: 300px;
+}
+
+/* NVIDIA-brand the client-rendered Mermaid diagrams.
+   The bundled mermaid extension hardcodes the stock default/dark theme and
+   ignores conf.py theme variables, so we style the rendered SVG directly.
+   These rules are scoped to .mermaid (not .slide-mermaid) so they also reach
+   the fullscreen modal, which clones the diagram outside the slide card.
+   !important overrides the inline styles mermaid writes onto each shape. */
+
+/* Let the card / modal background show through the diagram itself. */
+.mermaid svg {
+  background: transparent !important;
+}
+
+/* Node shapes: NVIDIA-green fill with a brighter green rim. */
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node path {
+  fill: #76b900 !important;
+  stroke: #8fd400 !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Node label text sits on green, so keep it black. */
+.mermaid .node .nodeLabel,
+.mermaid .node .label,
+.mermaid .nodeLabel,
+.mermaid .nodeLabel p,
+.mermaid .node text {
+  fill: #000000 !important;
+  color: #000000 !important;
+}
+
+/* Connector lines and arrowheads in NVIDIA green. */
+.mermaid .edgePaths path,
+.mermaid .edgePath .path,
+.mermaid .flowchart-link,
+.mermaid path.path {
+  stroke: #76b900 !important;
+  stroke-width: 1.8px !important;
+}
+
+.mermaid marker path,
+.mermaid .arrowMarkerPath {
+  fill: #76b900 !important;
+  stroke: #76b900 !important;
+}
+
+/* Edge labels: light text for the dark stage (default). */
+.mermaid .edgeLabel,
+.mermaid .edgeLabel p,
+.mermaid .edgeLabel .label,
+.mermaid .edgeLabel text {
+  color: #e6e6e6 !important;
+  fill: #e6e6e6 !important;
+  background-color: #000000 !important;
+}
+
+.mermaid .edgeLabel rect {
+  fill: #000000 !important;
+  opacity: 1 !important;
+}
+
+/* Light mode: dark edge-label text on the light card / modal. */
+[data-theme="light"] .mermaid .edgeLabel,
+[data-theme="light"] .mermaid .edgeLabel p,
+[data-theme="light"] .mermaid .edgeLabel .label,
+[data-theme="light"] .mermaid .edgeLabel text {
+  color: #1a1a1a !important;
+  fill: #1a1a1a !important;
+  background-color: var(--pst-color-surface, #f4f4f4) !important;
+}
+
+[data-theme="light"] .mermaid .edgeLabel rect {
+  fill: var(--pst-color-surface, #f4f4f4) !important;
+}
+
+/* Subgraph / cluster containers in carbon with light titles. */
+.mermaid .cluster rect {
+  fill: #141414 !important;
+  stroke: #3a3a3a !important;
+}
+
+.mermaid .cluster .nodeLabel,
+.mermaid .cluster text {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}

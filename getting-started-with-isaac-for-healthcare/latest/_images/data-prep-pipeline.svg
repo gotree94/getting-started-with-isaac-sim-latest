@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 250"
+     font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="dp-fwd" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+
+  <rect width="1060" height="250" fill="#F8FAFC" rx="6"/>
+  <text x="530" y="27" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1F2937">
+    Data Preparation: From Raw Recordings to a Training-Ready Dataset
+  </text>
+
+  <!-- flow arrows -->
+  <line x1="171" y1="120" x2="201" y2="120" stroke="#374151" stroke-width="2" marker-end="url(#dp-fwd)"/>
+  <line x1="361" y1="120" x2="391" y2="120" stroke="#374151" stroke-width="2" marker-end="url(#dp-fwd)"/>
+  <line x1="551" y1="120" x2="581" y2="120" stroke="#374151" stroke-width="2" marker-end="url(#dp-fwd)"/>
+  <line x1="741" y1="120" x2="771" y2="120" stroke="#374151" stroke-width="2" marker-end="url(#dp-fwd)"/>
+  <line x1="931" y1="120" x2="961" y2="120" stroke="#374151" stroke-width="2" marker-end="url(#dp-fwd)"/>
+
+  <!-- start: raw HDF5 -->
+  <rect x="20" y="86" width="151" height="68" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="95" y="116" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1F2937">Raw HDF5</text>
+  <text x="95" y="134" text-anchor="middle" font-size="9.5" fill="#64748B">recorded demos</text>
+
+  <!-- expand -->
+  <rect x="201" y="86" width="160" height="68" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="281" y="111" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1F2937">Expand</text>
+  <text x="281" y="128" text-anchor="middle" font-size="9.5" fill="#64748B">mimic: clone with</text>
+  <text x="281" y="141" text-anchor="middle" font-size="9.5" fill="#64748B">small noise</text>
+
+  <!-- label & filter -->
+  <rect x="391" y="86" width="160" height="68" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="471" y="111" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1F2937">Label &amp; filter</text>
+  <text x="471" y="128" text-anchor="middle" font-size="9.5" fill="#64748B">VLM marks each</text>
+  <text x="471" y="141" text-anchor="middle" font-size="9.5" fill="#64748B">episode pass / fail</text>
+
+  <!-- augment (optional: dashed border denotes optional) -->
+  <rect x="581" y="86" width="160" height="68" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="661" y="107" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1F2937">Augment</text>
+  <text x="661" y="123" text-anchor="middle" font-size="9" fill="#64748B" font-style="italic">optional · Cosmos</text>
+  <text x="661" y="136" text-anchor="middle" font-size="9.5" fill="#64748B">re-render camera</text>
+  <text x="661" y="148" text-anchor="middle" font-size="9.5" fill="#64748B">videos for variety</text>
+
+  <!-- convert -->
+  <rect x="771" y="86" width="160" height="68" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="851" y="111" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1F2937">Convert</text>
+  <text x="851" y="128" text-anchor="middle" font-size="9.5" fill="#64748B">to LeRobot dataset</text>
+  <text x="851" y="141" text-anchor="middle" font-size="9.5" fill="#64748B">(format GR00T expects)</text>
+
+  <!-- visualize / output -->
+  <rect x="961" y="86" width="83" height="68" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="1002" y="113" text-anchor="middle" font-size="11" font-weight="bold" fill="#1F2937">View</text>
+  <text x="1002" y="130" text-anchor="middle" font-size="9" fill="#64748B">browser</text>
+  <text x="1002" y="142" text-anchor="middle" font-size="9" fill="#64748B">check</text>
+
+  <!-- captions under groups -->
+  <text x="471" y="182" text-anchor="middle" font-size="10" fill="#6B7280">
+    Actions and joint states are preserved; only counts, labels, and visuals change.
+  </text>
+  <text x="471" y="200" text-anchor="middle" font-size="10" fill="#6B7280">
+    The same <tspan font-style="italic">--env</tspan> that recorded the data supplies every tool's defaults. Dashed = optional.
+  </text>
+</svg>

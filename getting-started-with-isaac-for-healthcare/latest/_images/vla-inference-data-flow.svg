@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 345"
+     font-family="Arial, Helvetica, sans-serif">
+
+  <defs>
+    <marker id="a-fwd" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#374151"/>
+    </marker>
+  </defs>
+
+  <!-- page background -->
+  <rect width="1050" height="345" fill="#F8FAFC" rx="6"/>
+
+  <!-- title -->
+  <text x="525" y="27" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1F2937">
+    VLA Inference: Data Streams between Isaac Sim and Policy Server
+  </text>
+
+  <!-- ═══════════════ ISAAC SIM BLOCK ═══════════════ -->
+  <rect x="20" y="65" width="245" height="210" rx="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <!-- header -->
+  <rect x="20" y="65" width="245" height="38" rx="10" fill="#E2E8F0"/>
+  <rect x="20" y="89"  width="245" height="14" fill="#E2E8F0"/>
+  <text x="143" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2937">Isaac Sim (Arena)</text>
+
+  <!-- camera row -->
+  <rect x="40" y="117" width="13" height="10" rx="2" fill="#94A3B8"/>
+  <polygon points="53,118 59,114 59,125 53,124" fill="#94A3B8"/>
+  <text x="68" y="127" font-size="10.5" fill="#1F2937">Room camera · wrist / head camera</text>
+  <text x="68" y="141" font-size="10"   fill="#6B7280">RGB, 256×256 (scissor) / 480×640 (G1)</text>
+
+  <line x1="38" y1="153" x2="253" y2="153" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- robot state row -->
+  <circle cx="46" cy="165" r="5" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="46" y1="170" x2="46" y2="180" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="46" y1="174" x2="41" y2="179" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="46" y1="174" x2="51" y2="179" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="62" y="167" font-size="10.5" fill="#1F2937">Joint positions (robot_joint_pos)</text>
+  <text x="62" y="181" font-size="10"   fill="#6B7280">state_dim: e.g. 43 DOF (G1), 7 (Franka)</text>
+
+  <line x1="38" y1="194" x2="253" y2="194" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- actions received -->
+  <polygon points="40,205 40,215 50,210" fill="#94A3B8"/>
+  <text x="58" y="213" font-size="10.5" fill="#1F2937">Receives action chunk (16 steps)</text>
+  <text x="58" y="227" font-size="10"   fill="#6B7280">Steps env, records rollout to HDF5</text>
+
+  <line x1="38" y1="238" x2="253" y2="238" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- randomisation -->
+  <text x="143" y="253" text-anchor="middle" font-size="10" fill="#6B7280" font-style="italic">Object poses randomized on each</text>
+  <text x="143" y="267" text-anchor="middle" font-size="10" fill="#6B7280" font-style="italic">episode reset (scene randomization)</text>
+
+  <!-- ═══════════════ VLA POLICY SERVER BLOCK ═══════════════ -->
+  <rect x="510" y="65" width="515" height="210" rx="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <!-- header -->
+  <rect x="510" y="65" width="515" height="38" rx="10" fill="#E2E8F0"/>
+  <rect x="510" y="89"  width="515" height="14" fill="#E2E8F0"/>
+  <text x="767" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2937">VLA Policy Server</text>
+
+  <!-- model names -->
+  <text x="767" y="122" text-anchor="middle" font-size="11" fill="#1F2937" font-weight="bold">
+    GR00T N1.5 · GR00T N1.6 · GR00T N1.7 · openpi PI0
+  </text>
+
+  <!-- inputs column -->
+  <text x="540" y="145" font-size="10.5" font-weight="bold" fill="#334155">Inputs</text>
+  <line x1="538" y1="149" x2="538" y2="240" stroke="#CBD5E1" stroke-width="1"/>
+
+  <text x="549" y="165" font-size="10.5" fill="#1F2937">Vision: camera frames</text>
+  <text x="549" y="179" font-size="10"   fill="#6B7280">processed by vision encoder</text>
+
+  <text x="549" y="199" font-size="10.5" fill="#1F2937">State: joint positions</text>
+  <text x="549" y="213" font-size="10"   fill="#6B7280">proprioception, fused with vision</text>
+
+  <text x="549" y="233" font-size="10.5" fill="#1F2937">Language: task instruction</text>
+  <text x="549" y="247" font-size="10"   fill="#6B7280">from language_instruction (env.yaml)</text>
+
+  <!-- centre arrow inside policy box -->
+  <line x1="760" y1="155" x2="800" y2="155" stroke="#374151" stroke-width="1.5" marker-end="url(#a-fwd)"/>
+  <text x="780" y="148" text-anchor="middle" font-size="9" fill="#6B7280">infer</text>
+
+  <!-- output column -->
+  <text x="812" y="145" font-size="10.5" font-weight="bold" fill="#334155">Output</text>
+  <line x1="810" y1="149" x2="810" y2="210" stroke="#CBD5E1" stroke-width="1"/>
+
+  <text x="822" y="165" font-size="10.5" fill="#1F2937">Action chunk</text>
+  <text x="822" y="179" font-size="10"   fill="#6B7280">16-step prediction</text>
+  <text x="822" y="199" font-size="10.5" fill="#1F2937">action_dim joints</text>
+  <text x="822" y="213" font-size="10"   fill="#6B7280">e.g. 43 DOF (G1)</text>
+
+  <!-- control freq note -->
+  <text x="767" y="262" text-anchor="middle" font-size="10" fill="#6B7280" font-style="italic">
+    Control frequency: 30 Hz (G1 / Franka) · 60 Hz (SO-ARM)
+  </text>
+  <text x="767" y="275" text-anchor="middle" font-size="10" fill="#6B7280" font-style="italic">
+    Inference served headless; Arena is the only process that opens a sim window
+  </text>
+
+  <!-- ═══════════════ DATA STREAM ARROWS (uniform gray; labels carry meaning) ═══════════════ -->
+
+  <!-- language input: from above into policy block -->
+  <text x="767" y="44" text-anchor="middle" font-size="10.5" fill="#6B7280" font-style="italic">
+    language_instruction (env.yaml, loaded once at start)
+  </text>
+  <line x1="767" y1="49" x2="767" y2="63" stroke="#374151" stroke-width="1.5" stroke-dasharray="3,2"
+        marker-end="url(#a-fwd)"/>
+
+  <!-- Obs arrow 1: camera frames -->
+  <line x1="267" y1="128" x2="507" y2="128"
+        stroke="#374151" stroke-width="2" marker-end="url(#a-fwd)"/>
+  <text x="387" y="120" text-anchor="middle" font-size="10" font-weight="bold" fill="#1F2937">
+    RGB camera frames
+  </text>
+
+  <!-- Obs arrow 2: robot state -->
+  <line x1="267" y1="162" x2="507" y2="162"
+        stroke="#374151" stroke-width="2" marker-end="url(#a-fwd)"/>
+  <text x="387" y="154" text-anchor="middle" font-size="10" font-weight="bold" fill="#1F2937">
+    robot state (joint pos)
+  </text>
+
+  <!-- Zenoh badge centred in the arrow channel -->
+  <rect x="350" y="174" width="75" height="17" rx="8" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1"/>
+  <text x="387" y="186" text-anchor="middle" font-size="9.5" fill="#64748B">via Zenoh topics</text>
+
+  <!-- Action arrow (leftward) -->
+  <line x1="508" y1="210" x2="268" y2="210"
+        stroke="#374151" stroke-width="2" marker-end="url(#a-fwd)"/>
+  <text x="387" y="202" text-anchor="middle" font-size="10" font-weight="bold" fill="#1F2937">
+    action chunk (16-step predictions)
+  </text>
+
+  <!-- ═══════════════ HDF5 RECORDING ═══════════════ -->
+  <!-- downward record arrow -->
+  <line x1="143" y1="277" x2="143" y2="295"
+        stroke="#374151" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#a-fwd)"/>
+  <text x="158" y="289" font-size="9.5" fill="#6B7280">per-episode record</text>
+
+  <!-- HDF5 box -->
+  <rect x="20" y="297" width="245" height="40" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="143" y="315" text-anchor="middle" font-size="11" font-weight="bold" fill="#1F2937">HDF5 Dataset</text>
+  <text x="143" y="330" text-anchor="middle" font-size="9.5" fill="#6B7280">
+    frames · actions · joint states · episode state
+  </text>
+
+</svg>

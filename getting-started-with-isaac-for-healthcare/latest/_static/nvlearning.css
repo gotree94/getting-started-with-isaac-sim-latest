@@ -1,0 +1,205 @@
+video
+{
+    width: 100%;
+}
+
+/* Kaltura video container styles */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Semantic learning components.                                      */
+/* Purpose-coded, not decorative: green = core learning path &        */
+/* success, blue = technical setup, amber = prerequisites, neutral =   */
+/* supporting/instructor/metadata. Each block is distinguished by      */
+/* accent color, icon, and treatment (driven by CSS variables so light */
+/* and dark modes stay readable).                                      */
+/* ------------------------------------------------------------------ */
+.admonition.nvlearning {
+    --nvl-accent: #76b900;
+    --nvl-tint: rgba(118, 185, 0, 0.10);
+    --nvl-icon-color: #5c8f00;
+    --nvl-icon: "\f05a"; /* circle-info fallback */
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: var(--nvl-accent);
+    /* Neutralize the theme's default info-blue on the other three sides. */
+    border-top-color: var(--pst-color-border, #d0d0d0);
+    border-right-color: var(--pst-color-border, #d0d0d0);
+    border-bottom-color: var(--pst-color-border, #d0d0d0);
+}
+.admonition.nvlearning > .admonition-title {
+    background-color: var(--nvl-tint);
+}
+/* Override the theme's default bell icon and info-blue color per block. */
+.admonition.nvlearning > .admonition-title:after {
+    content: var(--nvl-icon);
+    color: var(--nvl-icon-color);
+}
+/* Give block content room to breathe. */
+.admonition.nvlearning > .admonition-title + * {
+    margin-top: 0.6em;
+}
+.admonition.nvlearning > :last-child {
+    margin-bottom: 0.2em;
+}
+.admonition.nvlearning li + li {
+    margin-top: 0.3em;
+}
+
+/* Objectives: the primary learning outcomes (brand green, target). */
+.admonition.nvlearning.nvlearning-objectives {
+    --nvl-accent: #76b900;
+    --nvl-tint: rgba(118, 185, 0, 0.10);
+    --nvl-icon-color: #5c8f00;
+    --nvl-icon: "\f140"; /* bullseye */
+}
+/* Requirements: what to prepare before starting (amber, clipboard). */
+.admonition.nvlearning.nvlearning-requirements {
+    --nvl-accent: #b8860b;
+    --nvl-tint: rgba(184, 134, 11, 0.10);
+    --nvl-icon-color: #a9770a;
+    --nvl-icon: "\f46d"; /* clipboard-list */
+}
+/* Environment: technical setup / launch step (blue, rocket). */
+.admonition.nvlearning.nvlearning-environment {
+    --nvl-accent: #0071c5;
+    --nvl-tint: rgba(0, 113, 197, 0.08);
+    --nvl-icon-color: #0071c5;
+    --nvl-icon: "\f135"; /* rocket */
+}
+/* Checkpoint: verify success before moving on (deep success green, check). */
+.admonition.nvlearning.nvlearning-checkpoint {
+    --nvl-accent: #007a3d;
+    --nvl-tint: rgba(0, 122, 61, 0.10);
+    --nvl-icon-color: #007a3d;
+    --nvl-icon: "\f058"; /* circle-check */
+}
+/* Feedback: light survey prompt (neutral surface, inviting green icon). */
+.admonition.nvlearning.nvlearning-feedback {
+    --nvl-accent: #7a8471;
+    --nvl-tint: rgba(122, 132, 113, 0.08);
+    --nvl-icon-color: #5c8f00;
+    --nvl-icon: "\f075"; /* comment */
+}
+/* Handoff: instructor/internal aside, de-emphasized (muted, dashed). */
+.admonition.nvlearning.nvlearning-handoff {
+    --nvl-accent: #4c5546;
+    --nvl-tint: rgba(76, 85, 70, 0.07);
+    --nvl-icon-color: #4c5546;
+    --nvl-icon: "\f51b"; /* chalkboard */
+    border-left-style: dashed;
+}
+/* Meta: compact course-details card (neutral, full border, info icon). */
+.admonition.nvlearning.nvlearning-meta {
+    --nvl-accent: #4c5546;
+    --nvl-tint: rgba(76, 85, 70, 0.05);
+    --nvl-icon-color: #4c5546;
+    --nvl-icon: "\f05a"; /* circle-info */
+    border: 1px solid var(--pst-color-border, #d0d0d0);
+    border-left: 4px solid var(--nvl-accent);
+}
+.admonition.nvlearning.nvlearning-meta > :not(.admonition-title) {
+    font-size: 0.95em;
+}
+
+/* Dark mode: brighten accents and icons for contrast on dark surfaces. */
+html[data-theme="dark"] .admonition.nvlearning.nvlearning-objectives {
+    --nvl-icon-color: #8fd21a;
+    --nvl-tint: rgba(118, 185, 0, 0.16);
+}
+html[data-theme="dark"] .admonition.nvlearning.nvlearning-requirements {
+    --nvl-accent: #e0a12a;
+    --nvl-icon-color: #eab308;
+    --nvl-tint: rgba(234, 179, 8, 0.14);
+}
+html[data-theme="dark"] .admonition.nvlearning.nvlearning-environment {
+    --nvl-accent: #4ea6ff;
+    --nvl-icon-color: #4ea6ff;
+    --nvl-tint: rgba(78, 166, 255, 0.14);
+}
+html[data-theme="dark"] .admonition.nvlearning.nvlearning-checkpoint {
+    --nvl-accent: #2ec76d;
+    --nvl-icon-color: #2ec76d;
+    --nvl-tint: rgba(46, 199, 109, 0.14);
+}
+html[data-theme="dark"] .admonition.nvlearning.nvlearning-feedback {
+    --nvl-accent: #9aa595;
+    --nvl-icon-color: #8fd21a;
+    --nvl-tint: rgba(154, 165, 149, 0.12);
+}
+html[data-theme="dark"] .admonition.nvlearning.nvlearning-handoff {
+    --nvl-accent: #b9c2ad;
+    --nvl-icon-color: #b9c2ad;
+    --nvl-tint: rgba(185, 194, 173, 0.10);
+}
+html[data-theme="dark"] .admonition.nvlearning.nvlearning-meta {
+    --nvl-accent: #b9c2ad;
+    --nvl-icon-color: #b9c2ad;
+    --nvl-tint: rgba(185, 194, 173, 0.08);
+}
+
+/* View-as-Markdown footer button (for humans; agents use rel=alternate). */
+.footer-content-item {
+    margin: 1.5rem 0 2.5rem;
+}
+.view-as-markdown {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.25rem;
+    padding: 0.35rem 0.5rem;
+    line-height: 1;
+    text-decoration: none;
+    border: 1px solid var(--pst-color-border, #d0d0d0);
+    border-radius: 6px;
+    color: var(--pst-color-text-muted, #4c5546);
+    background: var(--pst-color-surface, transparent);
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.view-as-markdown:hover,
+.view-as-markdown:focus {
+    color: #5c8f00;
+    border-color: #76b900;
+    text-decoration: none;
+}
+.view-as-markdown i {
+    font-size: 1.15rem;
+}
+
+/* Shared sidebar resources component. */
+.nvlearning-resources {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--pst-color-border, #d0d0d0);
+}
+.nvlearning-resources__title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--pst-color-text-muted, #4c5546);
+    margin-bottom: 0.5rem;
+}
+.nvlearning-resources a {
+    display: block;
+    padding: 0.15rem 0;
+    text-decoration: none;
+}
+.nvlearning-resources a:hover {
+    color: #5c8f00;
+}

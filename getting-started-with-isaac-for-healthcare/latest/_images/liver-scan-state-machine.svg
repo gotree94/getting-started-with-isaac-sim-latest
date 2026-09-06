@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 310"
+     font-family="Arial, Helvetica, sans-serif">
+
+  <defs>
+    <marker id="fwd" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#374151"/>
+    </marker>
+    <marker id="rst" markerWidth="8" markerHeight="6" refX="1" refY="3" orient="auto-start-reverse">
+      <polygon points="0 0, 8 3, 0 6" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect width="1100" height="310" fill="#F8FAFC" rx="6"/>
+
+  <!-- title -->
+  <text x="550" y="27" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1F2937">
+    Liver Scan State Machine: Robotic Ultrasound Data Collection
+  </text>
+
+  <!-- ── vertical connector lines from labels to arrows ── -->
+  <line x1="202" y1="91" x2="202" y2="130" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="420" y1="91" x2="420" y2="130" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="635" y1="91" x2="635" y2="130" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="850" y1="91" x2="850" y2="130" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- ── transition condition labels ── -->
+  <text x="202" y="65" text-anchor="middle" font-size="10.5" fill="#4B5563">probe orientation</text>
+  <text x="202" y="80" text-anchor="middle" font-size="10.5" fill="#4B5563">aligned (DOWN)</text>
+
+  <text x="420" y="65" text-anchor="middle" font-size="10.5" fill="#4B5563">at scan contact</text>
+  <text x="420" y="80" text-anchor="middle" font-size="10.5" fill="#4B5563">position</text>
+
+  <text x="635" y="65" text-anchor="middle" font-size="10.5" fill="#4B5563">contact force</text>
+  <text x="635" y="80" text-anchor="middle" font-size="10.5" fill="#4B5563">detected (&gt; 0)</text>
+
+  <text x="850" y="65" text-anchor="middle" font-size="10.5" fill="#4B5563">scan waypoints</text>
+  <text x="850" y="80" text-anchor="middle" font-size="10.5" fill="#4B5563">exhausted</text>
+
+  <!-- ── forward transition arrows ── -->
+  <line x1="163" y1="140" x2="235" y2="140" stroke="#374151" stroke-width="2" marker-end="url(#fwd)"/>
+  <line x1="378" y1="140" x2="450" y2="140" stroke="#374151" stroke-width="2" marker-end="url(#fwd)"/>
+  <line x1="593" y1="140" x2="665" y2="140" stroke="#374151" stroke-width="2" marker-end="url(#fwd)"/>
+  <line x1="808" y1="140" x2="880" y2="140" stroke="#374151" stroke-width="2" marker-end="url(#fwd)"/>
+
+  <!-- ── state boxes (plain: white fill, slate border) ── -->
+
+  <rect x="23" y="107" width="140" height="66" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="93" y="134" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2937">SETUP</text>
+  <text x="93" y="153" text-anchor="middle" font-size="10" fill="#64748B">initial positioning</text>
+
+  <rect x="238" y="107" width="140" height="66" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="308" y="134" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2937">APPROACH</text>
+  <text x="308" y="153" text-anchor="middle" font-size="10" fill="#64748B">move to organ</text>
+
+  <rect x="453" y="107" width="140" height="66" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="523" y="134" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2937">CONTACT</text>
+  <text x="523" y="153" text-anchor="middle" font-size="10" fill="#64748B">surface contact</text>
+
+  <rect x="668" y="107" width="140" height="66" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="738" y="134" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2937">SCANNING</text>
+  <text x="738" y="153" text-anchor="middle" font-size="10" fill="#64748B">probe trajectory</text>
+
+  <rect x="883" y="107" width="140" height="66" rx="9" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="953" y="134" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2937">DONE</text>
+  <text x="953" y="153" text-anchor="middle" font-size="10" fill="#64748B">episode complete</text>
+
+  <!-- ── active module labels below each box ── -->
+  <text x="93"  y="192" text-anchor="middle" font-size="9.5" fill="#6B7280" font-style="italic">Orientation</text>
+  <text x="308" y="192" text-anchor="middle" font-size="9.5" fill="#6B7280" font-style="italic">PathPlanning · Orientation</text>
+  <text x="523" y="192" text-anchor="middle" font-size="9.5" fill="#6B7280" font-style="italic">Force · Orientation</text>
+  <text x="523" y="205" text-anchor="middle" font-size="9.5" fill="#6B7280" font-style="italic">· PathPlanning</text>
+  <text x="738" y="192" text-anchor="middle" font-size="9.5" fill="#6B7280" font-style="italic">Force · PathPlanning</text>
+  <text x="953" y="192" text-anchor="middle" font-size="9.5" fill="#9CA3AF" font-style="italic">none</text>
+
+  <!-- ── reset arc: DONE bottom → SETUP bottom ── -->
+  <path d="M 953 173 L 953 252 L 93 252 L 93 173"
+        stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,4" fill="none"
+        marker-end="url(#rst)"/>
+  <text x="523" y="270" text-anchor="middle" font-size="10" fill="#64748B">
+    episode saved → environment reset → back to SETUP
+  </text>
+
+  <!-- ── legend ── -->
+  <text x="30" y="294" font-size="9.5" fill="#9CA3AF">
+    Active modules shown in italics below each state.
+    Transitions driven by: Orientation module · PathPlanning module · Force module
+  </text>
+
+</svg>

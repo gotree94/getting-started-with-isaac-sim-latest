@@ -1,0 +1,374 @@
+/* "Partner Content" pill shown on partner-authored course cards */
+.partner-pill {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  /* NVIDIA secondary brand color (Dark Gray) rather than the primary green,
+     which is reserved for NVIDIA first-party identity. */
+  color: #ffffff;
+  background: #1e1e1e;
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* Overlay the partner pill onto the card's hero image, anchored to the
+   bottom-right corner. The overlay mirrors the image's 16:9 aspect ratio and
+   is pinned to the top of the (positioned) card, so it lines up with the image
+   regardless of the card's rendered width. */
+.partner-card {
+  position: relative;
+}
+.card-photo-pill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.6rem;
+  pointer-events: none;
+  z-index: 1;
+}
+.card-photo-pill p {
+  margin: 0;
+}
+.card-photo-pill .partner-pill {
+  pointer-events: auto;
+}
+
+/* "View as Markdown" button (sphinx-llm per-page .md) in the content footer */
+.footer-content-item {
+  margin: 1.5rem 0 2.5rem;
+}
+.view-as-markdown {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Pull left so the Markdown glyph aligns with the content's left edge,
+     countering the button's own left padding + 1px border. */
+  margin-left: calc(2.5rem - 1px);
+  padding: 0.35rem 0.5rem;
+  line-height: 1;
+  text-decoration: none;
+  border: 1px solid var(--pst-color-border, #d0d0d0);
+  border-radius: 6px;
+  color: var(--pst-color-text-muted, #4c5546);
+  background: var(--pst-color-surface, transparent);
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.view-as-markdown:hover,
+.view-as-markdown:focus {
+  color: #5c8f00;
+  border-color: #76b900;
+  text-decoration: none;
+}
+.view-as-markdown i {
+  font-size: 1.15rem;
+}
+
+.learning-kickoff {
+  --pa-text: var(--pst-color-text-base, #1f241c);
+  --pa-muted: var(--pst-color-text-muted, #4c5546);
+  --pa-border: var(--pst-color-border, #d5d9d2);
+  --pa-surface: var(--pst-color-surface, #ffffff);
+  --pa-surface-muted: var(--pst-color-on-background, #f7f9f4);
+  --pa-link: var(--pst-color-link, #3d7f00);
+  --pa-action: var(--sd-color-primary, var(--pst-color-primary, #76b900));
+  --pa-action-hover: var(--sd-color-primary-highlight, var(--pst-color-primary-highlight, #68a300));
+  --pa-action-text: var(--sd-color-primary-text, var(--pst-color-primary-text, #fff));
+  color: var(--pa-text);
+  margin: 1.5rem 0 2rem;
+}
+
+.learning-kickoff a {
+  color: var(--pa-link);
+}
+
+.physical-ai-dropdown,
+.course-finder {
+  border: 1px solid var(--pa-border);
+  border-radius: 8px;
+  color: var(--pa-text);
+}
+
+.physical-ai-dropdown {
+  background: var(--pa-surface-muted);
+  margin-bottom: 1rem;
+}
+
+.physical-ai-dropdown summary {
+  color: var(--pa-text);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.85rem 1rem;
+}
+
+.physical-ai-dropdown summary:focus-visible,
+.course-finder__start:focus-visible,
+.course-finder__option input:focus-visible + span,
+.course-finder__link:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--pa-action) 42%, transparent);
+  outline-offset: 2px;
+}
+
+.physical-ai-dropdown p {
+  color: var(--pa-text);
+  margin: 0;
+  padding: 0 1rem 1rem;
+}
+
+.physical-ai-dropdown p + p {
+  padding-top: 0;
+}
+
+.course-finder {
+  background: var(--pa-surface);
+  padding: 1rem;
+}
+
+.course-finder__header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.course-finder__eyebrow,
+.course-finder__result-eyebrow {
+  color: var(--pa-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 0.15rem;
+  text-transform: uppercase;
+}
+
+.course-finder h2,
+.course-finder h3 {
+  color: var(--pa-text);
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.course-finder h2 {
+  font-size: 1.35rem;
+}
+
+.course-finder h3 {
+  font-size: 1.05rem;
+}
+
+.course-finder__start,
+.course-finder__link {
+  align-items: center;
+  background: var(--pa-action);
+  border: 1px solid var(--pa-action);
+  border-radius: 6px;
+  color: var(--pa-action-text) !important;
+  display: inline-flex;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.2;
+  min-height: 2.5rem;
+  padding: 0.65rem 0.95rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.course-finder__start:hover,
+.course-finder__link:hover {
+  background: var(--pa-action-hover);
+  color: var(--pa-action-text) !important;
+  text-decoration: none;
+}
+
+.course-finder__panel {
+  margin-top: 1rem;
+}
+
+.course-finder__panel[hidden],
+.course-finder [hidden] {
+  display: none !important;
+}
+
+.course-finder__questions {
+  display: grid;
+  gap: 1rem;
+}
+
+.course-finder fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.course-finder legend {
+  color: var(--pa-text);
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  padding: 0;
+}
+
+.course-finder__options {
+  align-items: stretch;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+}
+
+.course-finder__options--compact,
+.course-finder__options--mode {
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+}
+
+.course-finder__mode {
+  max-width: 38rem;
+}
+
+.course-finder__option {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.course-finder__option input {
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.course-finder__option span {
+  align-items: center;
+  background: var(--pa-surface-muted);
+  border: 1px solid var(--pa-border);
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: var(--pa-text);
+  display: flex;
+  flex: 1;
+  font-weight: 600;
+  height: 100%;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 3.25rem;
+  padding: 0.55rem 0.7rem;
+  text-align: center;
+  transition: background 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+  width: 100%;
+}
+
+.course-finder__option span:hover {
+  border-color: color-mix(in srgb, var(--pa-action) 45%, var(--pa-border));
+}
+
+.course-finder__option input:checked + span {
+  background: color-mix(in srgb, var(--pa-action) 13%, var(--pa-surface));
+  border-color: var(--pa-action);
+  box-shadow: inset 0 0 0 1px var(--pa-action);
+}
+
+.course-finder__options--tasks {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.course-finder__option--task span {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: flex-start;
+  min-height: 6rem;
+  text-align: left;
+}
+
+.course-finder__option--task strong {
+  color: var(--pa-text);
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+.course-finder__option--task small {
+  color: var(--pa-muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.course-finder__task {
+  color: var(--pa-text);
+  margin: 0;
+}
+
+.course-finder__result,
+.course-finder__source {
+  border-top: 1px solid var(--pa-border);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.course-finder__empty {
+  color: var(--pa-muted);
+  margin: 0;
+}
+
+.course-finder__match {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.course-finder__meta {
+  color: var(--pa-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.course-finder__meta span {
+  background: var(--pa-surface-muted);
+  border: 1px solid var(--pa-border);
+  border-radius: 999px;
+  color: var(--pa-text);
+  padding: 0.2rem 0.55rem;
+}
+
+.course-finder__summary,
+.course-finder__skills,
+.course-finder__task,
+.course-finder__alternates,
+.course-finder__source {
+  color: var(--pa-text);
+  margin: 0;
+}
+
+.course-finder__alternates,
+.course-finder__source {
+  color: var(--pa-muted);
+  font-size: 0.95rem;
+}
+
+.course-finder__source {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .course-finder {
+    padding: 0.85rem;
+  }
+
+  .course-finder__header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .course-finder__start,
+  .course-finder__link {
+    width: 100%;
+  }
+}

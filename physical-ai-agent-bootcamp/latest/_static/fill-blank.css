@@ -1,0 +1,26 @@
+.fill-blank-input {
+  font-family: var(--pst-font-family-monospace, SFMono-Regular, Menlo, Consolas, monospace);
+  font-size: inherit;
+  line-height: inherit;
+  color: #76b900;
+  background: rgba(118, 185, 0, 0.08);
+  border: none;
+  border-bottom: 2px solid #76b900;
+  border-radius: 2px 2px 0 0;
+  padding: 0 2px;
+  margin: 0 1px;
+  min-width: 3ch;
+  box-sizing: content-box;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.fill-blank-input:hover {
+  background: rgba(118, 185, 0, 0.14);
+}
+
+.fill-blank-input:focus {
+  outline: none;
+  background: rgba(118, 185, 0, 0.2);
+  border-bottom-color: #91d100;
+}

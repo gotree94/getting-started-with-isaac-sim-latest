@@ -1,0 +1,24 @@
+/* Task-list checkbox styling. Without this, most themes render a bullet marker
+   in front of every checkbox. Scoped to MyST task lists so ordinary lists are
+   unaffected. */
+ul.contains-task-list {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+/* Vertical breathing room between checklist items. */
+ul.contains-task-list li {
+  margin: 0.4em 0;
+  line-height: 1.5;
+}
+
+/* Space the box away from its label, size it up slightly, and align it to the
+   text baseline. accent-color brands the checked state NVIDIA green. */
+ul.contains-task-list li input[type="checkbox"] {
+  margin-right: 0.65em;
+  width: 1.05em;
+  height: 1.05em;
+  vertical-align: -0.15em;
+  accent-color: #76b900;
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+ul.contains-task-list {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+ul.contains-task-list li > input[type="checkbox"] {
+  margin-right: 0.4em;
+}
